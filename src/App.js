@@ -36,8 +36,7 @@ class App extends Component {
     }
 
     delTodo = (id) => {
-        this.setState({ todos: [...this.state.todos.filter(todo => todo.id
-        !== id)] });
+        this.setState({ todos: [...this.state.todos.filter(todo => todo.id !== id)] });
     }
 
     addTodo = (title) => {
@@ -56,10 +55,12 @@ class App extends Component {
             <div className="App">
                 <div className="container">
                 <Header />
-                <AddTodo addTodo={this.addTodo} />
-                <Todos todos={this.state.todos}
-                    markComplete={this.markComplete}
-                    delTodo={this.delTodo} />
+                <AddTodo 
+                    addTodo={this.addTodo} />
+                    <Todos 
+                        todos={this.state.todos}
+                        markComplete={this.markComplete}
+                        delTodo={this.delTodo} />
                 </div>
             </div>
             

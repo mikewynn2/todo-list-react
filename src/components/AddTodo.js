@@ -23,14 +23,14 @@ export class AddTodo extends Component {
                     placeholder="Add Todo..."
                     value={this.state.title}
                     onChange={this.onChange}
-
                 />
-                        <input type="submit"
-                            value="Submit"
-                            className="btn"
-                            style={{flex: '1'}}
-                        />
 
+                    <input 
+                        type="submit"
+                        value="Submit"
+                        className="btn"
+                        style={{flex: '1'}}
+                        />
             </form>
         )
     }
