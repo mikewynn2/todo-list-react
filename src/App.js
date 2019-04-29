@@ -6,24 +6,28 @@ import uuid from 'uuid';
 import './App.css';
 
 class App extends Component {
-    state = {
-        todos: [
-            {
-                id: uuid.v4(),
-                title: 'Todo 1',
-                completed: false
-            },
-            {
-                id: uuid.v4(),
-                title: 'Todo 2',
-                completed: false
-            },
-            {
-                id: uuid.v4(),
-                title: 'This is a todo 3',
-                completed: false
-            },
-        ]
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            todos: [
+                {
+                    id: uuid.v4(),
+                    title: 'Todo 1',
+                    completed: false
+                },
+                {
+                    id: uuid.v4(),
+                    title: 'Todo 2',
+                    completed: false
+                },
+                {
+                    id: uuid.v4(),
+                    title: 'This is a todo 3',
+                    completed: false
+                },
+            ]
+        }
     }
 
     markComplete = (id) => {
